@@ -62,7 +62,7 @@ function hasValidProps(
 
     if (
       instanceProp.type === 'ObjectExpression' &&
-      !['actions', 'queryParams'].includes(instanceProp.name)
+      !['actions', 'queryParams', 'propTypes'].includes(instanceProp.name)
     ) {
       errors.push(
         `[${instanceProp.name}]: Transform not supported - value is of type object. For more details: eslint-plugin-ember/avoid-leaking-state-in-ember-objects`
